@@ -2,13 +2,14 @@
 
 
 To run lean test
-```
+#+begin_src
 lake build && ./build/bin/forLoopSpeed 1000000000
-```
+#+end_src
 
 To run c++ test
-```
+#+begin_src
 g++ main.cpp -O3 -DNDEBUG -o main && ./main 1000000000
-```
+#+end_src
+
 
 
