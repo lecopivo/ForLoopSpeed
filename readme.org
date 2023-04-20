@@ -3,12 +3,12 @@
 
 To run lean test
 #+begin_src
-lake build && ./build/bin/forLoopSpeed 1000000000
+lake build && ./build/bin/forLoopSpeed 10000
 #+end_src
 
 To run c++ test
 #+begin_src
-g++ main.cpp -O3 -DNDEBUG -o main && ./main 1000000000
+g++ main.cpp -O3 -DNDEBUG -o main && ./main 10000
 #+end_src
 
 
