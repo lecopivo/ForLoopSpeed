@@ -1,0 +1,14 @@
+* A simple project to test Lean's loop speed
+
+
+To run lean test
+```
+lake build && ./build/bin/forLoopSpeed 1000000000
+```
+
+To run c++ test
+```
+g++ main.cpp -O3 -DNDEBUG -o main && ./main 1000000000
+```
+
+

@@ -75,3 +75,14 @@ partial def Idx.fold {β : Type} (range : Range (Idx n)) (f : β → Idx n → �
         init
     | none => init
 
+
+
+-- taken from Aesop      
+@[inline]
+def time [Monad m] [MonadLiftT BaseIO m] (x : m α) : m (α × Nat) := do
+  let start ← IO.monoNanosNow
+  let a ← x
+  let stop ← IO.monoNanosNow
+  return (a, stop - start)
+
+
